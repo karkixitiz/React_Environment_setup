@@ -48,6 +48,7 @@ Open webpack.config.js file and add the following code. We are setting webpack e
 And lastly, we are setting babel loaders to search for js files, and use es2015 and react presets that we installed before.
 
 webpack.config.js
+
 var config = {
    entry: './main.js',
    output: {
@@ -72,6 +73,7 @@ var config = {
    }
 }
 module.exports = config;
+
 Open the package.json and delete "test" "echo \"Error: no test specified\" && exit 1" inside "scripts" object. We are deleting this line since we will not do any testing in this tutorial. Let's add the start command instead.
 
 "start": "webpack-dev-server --hot"
